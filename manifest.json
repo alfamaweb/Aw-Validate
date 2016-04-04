@@ -1,0 +1,30 @@
+{
+  "name": "Alfamaweb - validador",
+  "short_name":"aw-validador",
+  "version": "1.2",
+  "description": "usado para validação simples de paginas html",
+  "icons": {
+    "16": "icons/ico16.png",
+    "48": "icons/ico48.png",
+    "128": "icons/ico128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/ico16.png",
+    "default_popup": "main.html"
+  },
+  "background": {
+    "scripts": ["jquery.min.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "identity",
+    "tabs",
+    "notifications",
+    "storage",
+    "http://*/",
+    "https://*/",
+    "<all_urls>"
+  ],
+  "manifest_version": 2
+
+}
